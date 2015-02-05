@@ -1,0 +1,23 @@
+{
+  "name": "postcss-flexgrid",
+  "version": "1.0.0",
+  "description": "PostCSS helpers for defining a flexible grid in PostCSS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/area17/postcss-flexgrid.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "postcss",
+    "postcss-plugins",
+    "grid"
+  ],
+  "author": "Ned Baldessin <ned@baldessin.fr>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^3.1.0"
+  }
+}
