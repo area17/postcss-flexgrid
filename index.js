@@ -77,6 +77,27 @@ var flexGridProcessor = function(style, opts) {
       decl.removeSelf();
     }
 
+    // Helper that returns gutter width as a percentage value
+
+    // This helper receives 2 parameters:
+    // `container_columns` => Amount of columns of the container element
+    // `gutter_width` => To override the main gutter width (Only if you know what you're doing)
+
+    // Examples:
+    // outerDiv {
+    //   span: 6 of 12;
+    // }
+    // innerDiv {
+    //   width: span(4);
+    //   margin-left: gutter(6);
+    // }
+    if (decl.value !== null && decl.value.indexOf('gutter(') !== -1) {
+      cols = decl.value.match(asValueRE);
+      container_columns = cols && cols[1];
+      gutter_width = cols && cols[2];
+      decl.value = flexGutter(container_columns, gutter_width) + '%';
+    }
+
   });
 
 
