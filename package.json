@@ -1,6 +1,6 @@
 {
   "name": "postcss-flexgrid",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "PostCSS helpers for defining a flexible grid in PostCSS",
   "repository": {
     "type": "git",
